@@ -1,0 +1,1 @@
+Extract this to assetto corsa/apps/python directory and enable in game
