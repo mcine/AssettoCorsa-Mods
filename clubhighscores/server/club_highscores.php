@@ -31,13 +31,9 @@
 		{
 			// highscore entry
 			$removechars = array(' ','.','.');
-			$update_entry['score'] = $msg['score'];// str_replace($removechars, "", $msg['score']);
-			$update_entry['name'] = $name;
-			$update_entry['car'] = $msg['car'];
-			//$update_entry['laptime'] = $msg['laptime'];
-			//$entry = [];
 			$entry[$name] = $msg;
-			$filename = sprintf("club_highscores/%s_%s.json",$msg['track'],$msg['mode']);
+			$msg["updateTime"] = date("Ymd H:i:s");
+			$filename = sprintf("club_highscores/%s-%s.json",$msg['track'],$msg['mode']);
 	
 			if(file_exists($filename))
 			{
@@ -45,14 +41,14 @@
 			}
    		if(!empty($scoretable[$name]))
    		{
-   			if(((int)$scoretable[$name]['score']) < ((int)$update_entry['score']))
+   			if(((int)$scoretable[$name]['score']) < ((int)$msg['score']))
    			{
-  				 $scoretable[$name]=$update_entry;
+  				 $scoretable[$name]=$msg;
    			}
    			else $donotupdate = true;
    			
    		}
-   		else $scoretable[$name]=$update_entry;
+   		else $scoretable[$name]=$msg;
    		if(!$donotupdate)
    		{
    			usort($scoretable, 'myScoreSort');
@@ -78,7 +74,7 @@
 			$update_entry['name'] = $name;
 			//$entry = [];
 			$entry[$name] = $entry;
-			$filename = sprintf("club_highscores/%s_%s.json",$msg['track'],$msg['mode']);
+			$filename = sprintf("club_highscores/%s-%s.json",$msg['track'],$msg['mode']);
 	
 			if(file_exists($filename))
 			{
@@ -133,7 +129,7 @@
     case 'GET':
 		  if(!empty($_GET['track']) && !empty($_GET['mode']))
 		  {
-			$filename = sprintf("club_highscores/%s_%s.json",$_GET['track'],$_GET['mode']);
+			$filename = sprintf("club_highscores/%s-%s.json",$_GET['track'],$_GET['mode']);
 			echo file_get_contents($filename);
 		  }
 		  else echo file_get_contents("club_highscores/scorelog.txt");
@@ -149,15 +145,15 @@
 		  $test = json_decode(file_get_contents('php://input'),true);		  
 	  	log_POST($test);
 	  	
-	  	if('drift' == strtolower($test['mode']))
-	  	{
-			  update_drift_score($test);
-			  send_response(200, "Score updated", "OK");
-			}
-			else if('time' == strtolower($test['mode']))
+		  if('time' == strtolower($test['mode']))
 			{
 				update_time_score($test);
 				send_response(200, "Score updated", "OK");
+			}
+			else if (array_key_exists("mode",$test))
+			{
+				update_drift_score($test);
+			  send_response(200, "Score updated", "OK");
 			}
 			else send_response(405, "Mode Not supported", "Error");
 		  break;

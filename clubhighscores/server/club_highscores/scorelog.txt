@@ -1,0 +1,695 @@
+20161007 19:23:39 -- BIM,drift-,drift,0
+20161007 19:23:41 -- BIM,drift-,drift,0
+20161007 19:23:47 -- BIM,drift-,drift,0
+20161007 19:26:10 -- BIM,drift-,drift,0
+20161007 19:26:18 -- BIM,drift-,drift,0
+20161007 19:26:29 -- BIM,drift-,drift,0
+20161007 19:26:31 -- BIM,drift-,drift,0
+20161007 19:26:36 -- BIM,drift-,drift,0
+20161007 19:28:04 -- BIM,drift-,drift,0
+20161007 19:28:24 -- BIM,drift-,drift,0
+20161007 19:28:32 -- BIM,drift-,drift,0
+20161007 19:28:39 -- BIM,drift-,drift,0
+20161007 19:28:48 -- BIM,drift-,drift,0
+20161007 19:29:06 -- BIM,drift-,drift,0
+20161007 19:29:11 -- BIM,drift-,drift,0
+20161007 19:29:23 -- BIM,drift-,drift,0
+20161007 19:29:32 -- BIM,drift-,drift,0
+20161007 19:29:52 -- BIM,drift-,drift,0
+20161007 19:30:00 -- BIM,drift-,drift,0
+20161007 19:30:05 -- BIM,drift-,drift,0
+20161007 19:30:08 -- BIM,drift-,drift,0
+20161007 19:31:29 -- BIM,drift-,drift,0
+20161007 19:31:34 -- BIM,drift-,drift,0
+20161007 19:34:21 -- BIM,drift-,drift,0
+20161007 19:34:29 -- BIM,drift-,drift,0
+20161007 19:34:38 -- BIM,drift-,drift,0
+20161007 19:34:43 -- BIM,drift-,drift,0
+20161007 19:34:57 -- BIM,drift-,drift,0
+20161007 19:35:07 -- BIM,drift-,drift,0
+20161007 19:35:13 -- BIM,drift-,drift,0
+20161007 19:35:15 -- BIM,drift-,drift,0
+20161007 19:45:35 -- BIM,drift-,drift,0
+20161007 19:45:53 -- BIM,drift-,drift,0
+20161007 19:46:08 -- BIM,drift-,drift,0
+20161007 19:46:14 -- BIM,drift-,drift,0
+20161007 19:46:33 -- BIM,drift-,drift,0
+20161007 19:46:49 -- BIM,drift-,drift,0
+20161007 19:46:58 -- BIM,drift-,drift,0
+20161007 19:47:20 -- BIM,drift-,drift,0
+20161007 19:47:31 -- BIM,drift-,drift,0
+20161007 19:47:47 -- BIM,drift-,drift,0
+20161007 19:48:06 -- BIM,drift-,drift,0
+20161007 19:48:28 -- BIM,drift-,drift,0
+20161007 19:49:00 -- BIM,drift-,drift,0
+20161007 19:49:27 -- BIM,drift-,drift,0
+20161007 19:49:30 -- BIM,drift-,drift,0
+20161007 19:50:13 -- BIM,drift-,drift,0
+20161007 19:50:16 -- BIM,drift-,drift,0
+20161007 19:50:26 -- BIM,drift-,drift,0
+20161007 19:50:28 -- BIM,drift-,drift,0
+20161007 19:50:39 -- BIM,drift-,drift,0
+20161007 19:50:43 -- BIM,drift-,drift,0
+20161007 19:50:48 -- BIM,drift-,drift,0
+20161007 19:50:54 -- BIM,drift-,drift,0
+20161007 19:51:10 -- BIM,drift-,drift,0
+20161007 19:51:47 -- BIM,drift-,drift,0
+20161007 19:52:01 -- BIM,drift-,drift,0
+20161007 19:52:11 -- BIM,drift-,drift,0
+20161007 19:52:16 -- BIM,drift-,drift,0
+20161007 19:55:59 -- BIM,drift-,drift,0
+20161007 19:56:11 -- BIM,drift-,drift,0
+20161007 19:56:19 -- BIM,drift-,drift,0
+20161007 19:56:22 -- BIM,drift-,drift,0
+20161007 19:56:29 -- BIM,drift-,drift,0
+20161007 19:56:44 -- BIM,drift-,drift,0
+20161007 19:56:51 -- BIM,drift-,drift,0
+20161007 19:57:07 -- BIM,drift-,drift,0
+20161007 19:57:12 -- BIM,drift-,drift,0
+20161007 19:57:14 -- BIM,drift-,drift,0
+20161007 19:57:23 -- BIM,drift-,drift,0
+20161007 19:57:43 -- BIM,drift-,drift,0
+20161007 19:57:55 -- BIM,drift-,drift,0
+20161007 19:58:10 -- BIM,drift-,drift,0
+20161007 20:09:35 -- BIM,drift-,drift,0
+20161007 20:10:14 -- BIM,drift-,drift,0
+20161007 20:10:42 -- BIM,drift-,drift,0
+20161007 20:10:51 -- BIM,drift-,drift,0
+20161007 20:10:56 -- BIM,drift-,drift,0
+20161007 20:11:11 -- BIM,drift-,drift,1
+20161007 20:11:13 -- BIM,drift-,drift,0
+20161007 20:11:29 -- BIM,drift-,drift,0
+20161007 20:11:45 -- BIM,drift-,drift,0
+20161007 20:12:13 -- BIM,drift-,drift,0
+20161007 20:12:34 -- BIM,drift-,drift,0
+20161007 20:12:45 -- BIM,drift-,drift,0
+20161007 20:13:02 -- BIM,drift-,drift,0
+20161007 20:13:08 -- BIM,drift-,drift,0
+20161007 20:13:19 -- BIM,drift-,drift,0
+20161007 20:13:25 -- BIM,drift-,drift,0
+20161007 20:13:32 -- BIM,drift-,drift,0
+20161007 20:13:35 -- BIM,drift-,drift,0
+20161007 20:13:49 -- BIM,drift-,drift,0
+20161007 20:14:14 -- BIM,drift-,drift,0
+20161007 20:14:34 -- BIM,drift-,drift,0
+20161007 20:14:36 -- BIM,drift-,drift,0
+20161007 20:14:59 -- BIM,drift-,drift,0
+20161007 20:15:05 -- BIM,drift-,drift,0
+20161007 20:15:08 -- BIM,drift-,drift,0
+20161007 20:15:14 -- BIM,drift-,drift,0
+20161007 20:15:34 -- BIM,drift-,drift,0
+20161007 20:15:45 -- BIM,drift-,drift,0
+20161007 20:15:50 -- BIM,drift-,drift,0
+20161007 20:16:12 -- BIM,drift-,drift,0
+20161007 20:16:29 -- BIM,drift-,drift,0
+20161007 20:16:41 -- BIM,drift-,drift,0
+20161007 20:16:52 -- BIM,drift-,drift,0
+20161007 20:17:06 -- BIM,drift-,drift,0
+20161007 20:17:26 -- BIM,drift-,drift,0
+20161007 20:17:39 -- BIM,drift-,drift,0
+20161007 20:17:42 -- BIM,drift-,drift,0
+20161007 20:17:58 -- BIM,drift-,drift,0
+20161007 20:18:33 -- BIM,drift-,drift,0
+20161007 20:18:35 -- BIM,drift-,drift,0
+20161007 20:19:11 -- BIM,drift-,drift,0
+20161007 20:19:35 -- BIM,drift-,drift,0
+20161007 20:19:56 -- BIM,drift-,drift,0
+20161007 20:20:20 -- BIM,drift-,drift,0
+20161007 20:20:23 -- BIM,drift-,drift,0
+20161007 20:20:33 -- BIM,drift-,drift,0
+20161007 20:20:51 -- BIM,drift-,drift,0
+20161007 20:20:57 -- BIM,drift-,drift,0
+20161007 20:21:16 -- BIM,drift-,drift,0
+20161007 20:21:23 -- Tomi Makinen,drift-,drift,79
+20161007 20:21:25 -- BIM,drift-,drift,0
+20161007 20:21:39 -- BIM,drift-,drift,0
+20161007 20:21:42 -- BIM,drift-,drift,0
+20161007 20:21:46 -- BIM,drift-,drift,0
+20161007 20:21:49 -- BIM,drift-,drift,0
+20161007 20:22:05 -- BIM,drift-,drift,0
+20161007 20:22:09 -- BIM,drift-,drift,0
+20161007 20:22:21 -- BIM,drift-,drift,0
+20161007 20:27:45 -- BIM,drift-,drift,1
+20161007 20:28:02 -- BIM,drift-,drift,907
+20161007 20:28:13 -- BIM,drift-,drift,54
+20161007 20:28:28 -- BIM,drift-,drift,412
+20161007 20:28:30 -- BIM,drift-,drift,19
+20161007 20:28:51 -- BIM,drift-,drift,105
+20161007 20:29:08 -- BIM,drift-,drift,152
+20161007 20:29:23 -- BIM,drift-,drift,150
+20161007 20:29:41 -- BIM,drift-,drift,83
+20161007 20:29:47 -- BIM,drift-,drift,8
+20161007 20:30:27 -- BIM,drift-,drift,1290
+20161007 20:30:40 -- BIM,drift-,drift,129
+20161007 20:30:53 -- BIM,drift-,drift,498
+20161007 20:31:17 -- BIM,drift-,drift,858
+20161007 20:31:43 -- BIM,drift-,drift,1040
+20161007 20:32:20 -- BIM,drift-,drift,1079
+20161007 20:32:25 -- BIM,drift-,drift,24
+20161007 20:32:27 -- BIM,drift-,drift,13
+20161007 20:32:34 -- BIM,drift-,drift,192
+20161007 20:34:09 -- BIM,drift-,drift,103
+20161007 20:34:11 -- BIM,drift-,drift,71
+20161007 20:34:21 -- BIM,drift-,drift,33
+20161007 20:34:26 -- BIM,drift-,drift,94
+20161007 20:34:57 -- BIM,drift-,drift,425
+20161007 20:37:00 -- BIM,drift-,drift,27
+20161007 20:37:24 -- BIM,drift-,drift,234
+20161007 20:37:29 -- BIM,drift-,drift,104
+20161007 20:37:34 -- BIM,drift-,drift,15
+20161007 20:37:41 -- BIM,drift-,drift,130
+20161007 20:37:49 -- BIM,drift-,drift,36
+20161007 20:38:04 -- BIM,drift-,drift,264
+20161007 20:40:25 -- BIM,ks_drag-drag400,drift,629
+20161007 20:40:42 -- BIM,ks_drag-drag400,drift,227
+20161007 20:40:58 -- BIM,ks_drag-drag400,drift,6
+20161007 20:41:01 -- BIM,ks_drag-drag400,drift,111
+20161007 20:41:36 -- BIM,ks_drag-drag400,drift,585
+20161007 20:41:49 -- BIM,ks_drag-drag400,drift,630
+20161007 20:42:16 -- BIM,ks_drag-drag400,drift,786
+20161007 20:42:20 -- BIM,ks_drag-drag400,drift,519
+20161007 20:42:37 -- BIM,ks_drag-drag400,drift,1229
+20161007 20:42:43 -- BIM,ks_drag-drag400,drift,6
+20161007 20:42:46 -- BIM,ks_drag-drag400,drift,1
+20161007 20:42:54 -- BIM,ks_drag-drag400,drift,710
+20161007 20:43:07 -- BIM,ks_drag-drag400,drift,217
+20161007 20:43:14 -- BIM,ks_drag-drag400,drift,747
+20161007 20:44:45 -- BIM,ks_drag-drag400,drift,1223
+20161007 20:44:47 -- BIM,ks_drag-drag400,drift,14
+20161007 20:45:02 -- BIM,ks_drag-drag400,drift,379
+20161007 20:45:06 -- BIM,ks_drag-drag400,drift,848
+20161007 20:45:23 -- BIM,ks_drag-drag400,drift,1
+20161007 20:45:32 -- BIM,ks_drag-drag400,drift,1439
+20161007 20:45:59 -- BIM,ks_drag-drag400,drift,1444
+20161007 20:46:01 -- BIM,ks_drag-drag400,drift,1
+20161007 20:47:38 -- BIM,ks_drag-drag400,drift,1189
+20161007 20:48:05 -- BIM,ks_drag-drag400,drift,1589
+20161007 20:48:06 -- BIM,ks_drag-drag400,drift,171
+20161007 20:48:53 -- BIM,ks_drag-drag400,drift,2103
+20161007 20:49:10 -- BIM,ks_drag-drag400,drift,4
+20161007 20:49:13 -- BIM,ks_drag-drag400,drift,60
+20161007 20:49:17 -- BIM,ks_drag-drag400,drift,694
+20161007 20:49:21 -- BIM,ks_drag-drag400,drift,793
+20161007 20:53:14 -- BIM,ks_nurburgring-layout_sprint_b,drift,827
+20161007 20:53:25 -- BIM,ks_nurburgring-layout_sprint_b,drift,974
+20161007 20:53:38 -- BIM,ks_nurburgring-layout_sprint_b,drift,609
+20161007 20:53:41 -- BIM,ks_nurburgring-layout_sprint_b,drift,10
+20161007 20:53:54 -- BIM,ks_nurburgring-layout_sprint_b,drift,1035
+20161007 20:54:21 -- BIM,ks_nurburgring-layout_sprint_b,drift,976
+20161007 20:54:42 -- BIM,ks_nurburgring-layout_sprint_b,drift,57
+20161007 20:56:03 -- BIM,ks_nurburgring-layout_sprint_b,drift,1865
+20161007 20:56:10 -- BIM,ks_nurburgring-layout_sprint_b,drift,426
+20161007 20:56:27 -- BIM,ks_nurburgring-layout_sprint_b,drift,612
+20161007 20:56:30 -- BIM,ks_nurburgring-layout_sprint_b,drift,1
+20161007 20:56:49 -- BIM,ks_nurburgring-layout_sprint_b,drift,1056
+20161007 20:57:01 -- BIM,ks_nurburgring-layout_sprint_b,drift,77
+20161007 20:57:06 -- BIM,ks_nurburgring-layout_sprint_b,drift,60
+20161007 20:59:04 -- BIM,ks_nurburgring-layout_sprint_b,drift,158
+20161007 21:00:11 -- BIM,ks_nurburgring-layout_sprint_b,drift,913
+20161007 21:00:26 -- BIM,ks_nurburgring-layout_sprint_b,drift,571
+20161007 21:00:37 -- BIM,ks_nurburgring-layout_sprint_b,drift,594
+20161007 21:00:39 -- BIM,ks_nurburgring-layout_sprint_b,drift,4
+20161007 21:00:41 -- BIM,ks_nurburgring-layout_sprint_b,drift,10
+20161007 21:00:54 -- BIM,ks_nurburgring-layout_sprint_b,drift,728
+20161007 21:01:29 -- BIM,ks_nurburgring-layout_sprint_b,drift,1355
+20161007 21:02:19 -- BIM,ks_nurburgring-layout_sprint_b,drift,291
+20161007 21:02:36 -- BIM,ks_nurburgring-layout_sprint_b,drift,684
+20161007 21:02:47 -- BIM,ks_nurburgring-layout_sprint_b,drift,289
+20161007 21:03:53 -- BIM,ks_nurburgring-layout_sprint_b,drift,360
+20161007 21:04:02 -- BIM,ks_nurburgring-layout_sprint_b,drift,122
+20161007 21:04:06 -- BIM,ks_nurburgring-layout_sprint_b,drift,93
+20161007 21:04:12 -- BIM,ks_nurburgring-layout_sprint_b,drift,280
+20161007 21:09:31 -- BIM,ks_nurburgring-layout_sprint_b,drift,2
+20161007 21:09:38 -- BIM,ks_nurburgring-layout_sprint_b,drift,127
+20161007 21:10:27 -- BIM,ks_nurburgring-layout_sprint_b,drift,1802
+20161007 21:10:36 -- BIM,ks_nurburgring-layout_sprint_b,drift,2
+20161007 21:11:01 -- BIM,ks_nurburgring-layout_sprint_b,drift,1050
+20161007 21:11:35 -- BIM,ks_nurburgring-layout_sprint_b,drift,2242
+20161007 21:11:38 -- BIM,ks_nurburgring-layout_sprint_b,drift,22
+20161007 21:11:45 -- BIM,ks_nurburgring-layout_sprint_b,drift,124
+20161007 21:11:48 -- BIM,ks_nurburgring-layout_sprint_b,drift,140
+20161007 21:11:53 -- BIM,ks_nurburgring-layout_sprint_b,drift,117
+20161007 22:49:46 -- Tomi Makinen,drift-,drift,115
+20161007 22:49:51 -- Tomi Makinen,drift-,drift,13
+20161007 22:50:14 -- Tomi Makinen,drift-,drift,297
+20161007 22:50:19 -- Tomi Makinen,drift-,drift,56
+20161007 22:50:27 -- Tomi Makinen,drift-,drift,80
+20161007 22:50:40 -- Tomi Makinen,drift-,drift,122
+20161007 22:50:46 -- Tomi Makinen,drift-,drift,123
+20161007 22:51:01 -- Tomi Makinen,drift-,drift,217
+20161007 22:51:14 -- Tomi Makinen,drift-,drift,55
+20161007 22:51:23 -- Tomi Makinen,drift-,drift,25
+20161007 22:51:25 -- Tomi Makinen,drift-,drift,12
+20161007 22:51:43 -- Tomi Makinen,drift-,drift,149
+20161007 22:51:46 -- Tomi Makinen,drift-,drift,20
+20161007 22:51:58 -- Tomi Makinen,drift-,drift,210
+20161007 22:52:13 -- Tomi Makinen,drift-,drift,75
+20161007 22:52:33 -- Tomi Makinen,drift-,drift,650
+20161007 22:52:58 -- Tomi Makinen,drift-,drift,166
+20161007 22:53:13 -- Tomi Makinen,drift-,drift,326
+20161007 22:53:28 -- Tomi Makinen,drift-,drift,3
+20161007 22:53:36 -- Tomi Makinen,drift-,drift,45
+20161007 22:53:46 -- Tomi Makinen,drift-,drift,180
+20161007 22:54:12 -- Tomi Makinen,drift-,drift,2
+20161007 22:54:32 -- Tomi Makinen,drift-,drift,378
+20161007 22:54:41 -- Tomi Makinen,drift-,drift,50
+20161007 22:54:47 -- Tomi Makinen,drift-,drift,1
+20161007 22:55:02 -- Tomi Makinen,drift-,drift,9
+20161007 22:55:35 -- Tomi Makinen,drift-,drift,113
+20161007 22:55:53 -- Tomi Makinen,drift-,drift,368
+20161007 22:56:09 -- Tomi Makinen,drift-,drift,15
+20161007 22:56:11 -- Tomi Makinen,drift-,drift,24
+20161007 22:56:19 -- Tomi Makinen,drift-,drift,54
+20161007 22:56:36 -- Tomi Makinen,drift-,drift,10
+20161007 22:56:46 -- Tomi Makinen,drift-,drift,160
+20161007 22:56:52 -- Tomi Makinen,drift-,drift,196
+20161007 22:57:13 -- Tomi Makinen,drift-,drift,671
+20161007 22:57:16 -- Tomi Makinen,drift-,drift,4
+20161007 22:57:20 -- Tomi Makinen,drift-,drift,6
+20161007 22:57:42 -- Tomi Makinen,drift-,drift,63
+20161007 22:57:47 -- Tomi Makinen,drift-,drift,23
+20161007 22:57:53 -- Tomi Makinen,drift-,drift,161
+20161007 22:58:01 -- Tomi Makinen,drift-,drift,266
+20161007 22:58:14 -- Tomi Makinen,drift-,drift,1
+20161007 22:58:16 -- Tomi Makinen,drift-,drift,341
+20161007 22:58:23 -- Tomi Makinen,drift-,drift,3
+20161007 22:58:35 -- Tomi Makinen,drift-,drift,119
+20161007 22:58:54 -- Tomi Makinen,drift-,drift,523
+20161007 22:59:16 -- Tomi Makinen,drift-,drift,252
+20161008 10:45:11 -- Henri Miettinen,ks_nordschleife-nordschleife,drift,1
+20161008 10:45:28 -- Henri Miettinen,ks_nordschleife-nordschleife,drift,3
+20161008 10:49:44 -- Henri Miettinen,ks_barcelona-layout_gp,drift,4
+20161008 10:50:58 -- Henri Miettinen,ks_barcelona-layout_gp,drift,379
+20161008 10:51:13 -- Henri Miettinen,ks_barcelona-layout_gp,drift,19
+20161008 10:51:29 -- Henri Miettinen,ks_barcelona-layout_gp,drift,580
+20161008 10:51:42 -- Henri Miettinen,ks_barcelona-layout_gp,drift,18
+20161008 10:52:01 -- Henri Miettinen,ks_barcelona-layout_gp,drift,372
+20161008 10:52:17 -- Henri Miettinen,ks_barcelona-layout_gp,drift,156
+20161008 10:52:28 -- Henri Miettinen,ks_barcelona-layout_gp,drift,1
+20161008 10:52:36 -- Henri Miettinen,ks_barcelona-layout_gp,drift,6
+20161008 10:52:45 -- Henri Miettinen,ks_barcelona-layout_gp,drift,91
+20161008 10:53:18 -- Henri Miettinen,ks_barcelona-layout_gp,drift,4
+20161008 10:53:32 -- Henri Miettinen,ks_barcelona-layout_gp,drift,57
+20161008 10:53:49 -- Henri Miettinen,ks_barcelona-layout_gp,drift,642
+20161008 10:54:13 -- Henri Miettinen,ks_barcelona-layout_gp,drift,338
+20161008 10:54:24 -- Henri Miettinen,ks_barcelona-layout_gp,drift,72
+20161008 10:54:33 -- Henri Miettinen,ks_barcelona-layout_gp,drift,454
+20161008 10:54:48 -- Henri Miettinen,ks_barcelona-layout_gp,drift,25
+20161008 10:54:53 -- Henri Miettinen,ks_barcelona-layout_gp,drift,6
+20161008 10:55:08 -- Henri Miettinen,ks_barcelona-layout_gp,drift,853
+20161008 10:55:17 -- Henri Miettinen,ks_barcelona-layout_gp,drift,127
+20161008 10:55:24 -- Henri Miettinen,ks_barcelona-layout_gp,drift,106
+20161008 10:55:31 -- Henri Miettinen,ks_barcelona-layout_gp,drift,80
+20161008 10:59:56 -- Henri Miettinen,drift-,drift,426
+20161008 11:00:08 -- Henri Miettinen,drift-,drift,41
+20161008 11:00:11 -- Henri Miettinen,drift-,drift,28
+20161008 11:00:17 -- Henri Miettinen,drift-,drift,179
+20161008 11:00:21 -- Henri Miettinen,drift-,drift,2
+20161008 11:00:31 -- Henri Miettinen,drift-,drift,59
+20161008 11:00:37 -- Henri Miettinen,drift-,drift,629
+20161008 11:00:53 -- Henri Miettinen,drift-,drift,381
+20161008 11:00:54 -- Henri Miettinen,drift-,drift,91
+20161008 11:01:07 -- Henri Miettinen,drift-,drift,1
+20161008 11:01:10 -- Henri Miettinen,drift-,drift,156
+20161008 11:01:32 -- Henri Miettinen,drift-,drift,225
+20161008 11:01:42 -- Henri Miettinen,drift-,drift,19
+20161008 11:01:51 -- Henri Miettinen,drift-,drift,3
+20161008 11:02:00 -- Henri Miettinen,drift-,drift,167
+20161008 11:02:20 -- Henri Miettinen,drift-,drift,561
+20161008 11:02:34 -- Henri Miettinen,drift-,drift,182
+20161008 11:02:39 -- Henri Miettinen,drift-,drift,145
+20161008 11:07:20 -- Henri Miettinen,drift-,drift,770
+20161008 11:07:40 -- Henri Miettinen,drift-,drift,755
+20161008 11:08:48 -- Henri Miettinen,drift-,drift,485
+20161008 11:10:08 -- Henri Miettinen,drift-,drift,42
+20161008 11:10:17 -- Henri Miettinen,drift-,drift,139
+20161008 11:10:24 -- Henri Miettinen,drift-,drift,1
+20161014 09:21:38 -- Henri Miettinen,ks_brands_hatch-indy,drift,32
+20161014 09:22:13 -- Henri Miettinen,ks_brands_hatch-indy,drift,209
+20161014 09:24:31 -- Henri Miettinen,ks_brands_hatch-indy,drift,7
+20161014 09:27:08 -- Henri Miettinen,ks_brands_hatch-indy,drift,3
+20161014 09:27:16 -- Henri Miettinen,ks_brands_hatch-indy,drift,36
+20161014 09:29:35 -- Henri Miettinen,ks_brands_hatch-indy,drift,108
+20161014 09:33:58 -- Henri Miettinen,ks_brands_hatch-indy,drift,3
+20161014 09:37:23 -- Henri Miettinen,ks_brands_hatch-indy,drift,573
+20161015 08:38:21 -- Henri Miettinen,ks_silverstone-national,drift,34
+20161015 08:42:12 -- Henri Miettinen,ks_silverstone-national,drift,1
+20161015 08:47:47 -- Henri Miettinen,ks_red_bull_ring-layout_national,drift,26
+20161015 08:50:40 -- Henri Miettinen,ks_red_bull_ring-layout_national,drift,490
+20161015 08:50:45 -- Henri Miettinen,ks_red_bull_ring-layout_national,drift,12
+20161015 08:54:21 -- Henri Miettinen,ks_red_bull_ring-layout_national,drift,1
+20161015 08:59:16 -- Henri Miettinen,ks_red_bull_ring-layout_national,drift,6
+20161015 09:02:00 -- Henri Miettinen,ks_red_bull_ring-layout_national,drift,13
+20161015 09:10:24 -- Henri Miettinen,ks_red_bull_ring-layout_national,drift,8
+20161015 09:27:50 -- Henri Miettinen,ks_red_bull_ring-layout_national,drift,5
+20161015 09:28:05 -- Henri Miettinen,ks_red_bull_ring-layout_national,drift,7
+20161015 09:38:37 -- Henri Miettinen,ks_red_bull_ring-layout_national,drift,1
+20161015 09:38:40 -- Henri Miettinen,ks_red_bull_ring-layout_national,drift,489
+20161015 09:39:03 -- Henri Miettinen,ks_red_bull_ring-layout_national,drift,6
+20161015 09:40:16 -- Henri Miettinen,ks_red_bull_ring-layout_national,drift,39
+20161015 09:46:35 -- Henri Miettinen,ks_red_bull_ring-layout_national,drift,184
+20161015 09:47:01 -- Henri Miettinen,ks_red_bull_ring-layout_national,drift,42
+20161015 09:48:23 -- Henri Miettinen,ks_red_bull_ring-layout_national,drift,1
+20161015 09:50:35 -- Henri Miettinen,ks_red_bull_ring-layout_national,drift,36
+20161015 09:53:26 -- Henri Miettinen,ks_red_bull_ring-layout_national,drift,1
+20161015 09:54:24 -- Henri Miettinen,ks_red_bull_ring-layout_national,drift,1
+20161015 09:54:26 -- Henri Miettinen,ks_red_bull_ring-layout_national,drift,2
+20161015 09:54:47 -- Henri Miettinen,ks_red_bull_ring-layout_national,drift,1
+20161015 10:21:12 -- Henri Miettinen,ks_red_bull_ring-layout_national,drift,1
+20161015 10:22:20 -- Henri Miettinen,ks_red_bull_ring-layout_national,drift,3
+20161015 10:25:52 -- Henri Miettinen,ks_silverstone-national,drift,307
+20161015 10:36:31 -- Henri Miettinen,ks_silverstone-national,drift,103
+20161015 10:38:45 -- Henri Miettinen,ks_silverstone-national,drift,5
+20161015 10:39:03 -- Henri Miettinen,ks_silverstone-national,drift,2
+20161015 11:05:14 -- Henri Miettinen,ks_silverstone-national,drift,107
+20161015 11:38:52 -- Henri Miettinen,ks_silverstone-national,drift,117
+20161015 11:39:01 -- Henri Miettinen,ks_silverstone-national,drift,32
+20161015 11:40:31 -- Henri Miettinen,ks_silverstone-national,drift,7
+20161015 11:50:01 -- Henri Miettinen,ks_silverstone-national,drift,11
+20161015 11:52:13 -- Henri Miettinen,ks_silverstone-national,drift,623
+20161015 11:53:01 -- Henri Miettinen,ks_silverstone-national,drift,855
+20161015 11:53:21 -- Henri Miettinen,ks_silverstone-national,drift,8
+20161015 11:54:11 -- Henri Miettinen,ks_silverstone-national,drift,6
+20161015 11:54:46 -- Henri Miettinen,ks_silverstone-national,drift,1
+20161015 12:04:13 -- Henri Miettinen,ks_silverstone-national,drift,226
+20161015 12:09:06 -- Henri Miettinen,ks_silverstone-national,drift,130
+20161015 12:09:08 -- Henri Miettinen,ks_silverstone-national,drift,258
+20161015 12:09:14 -- Henri Miettinen,ks_silverstone-national,drift,5
+20161015 12:10:49 -- Henri Miettinen,ks_silverstone-national,drift,37
+20161015 12:12:11 -- Henri Miettinen,ks_silverstone-national,drift,91
+20161015 12:13:30 -- Henri Miettinen,ks_silverstone-national,drift,166
+20161015 12:14:25 -- Henri Miettinen,ks_silverstone-national,drift,136
+20161015 12:18:03 -- Henri Miettinen,ks_silverstone-national,drift,40
+20161015 12:18:11 -- Henri Miettinen,ks_silverstone-national,drift,71
+20161015 12:26:35 -- Henri Miettinen,ks_silverstone-national,drift,154
+20161015 12:28:08 -- Henri Miettinen,ks_silverstone-national,drift,1
+20161015 12:30:40 -- Henri Miettinen,ks_silverstone-national,drift,20
+20161015 12:30:46 -- Henri Miettinen,ks_silverstone-national,drift,4
+20161015 12:34:14 -- Henri Miettinen,ks_silverstone-national,drift,53
+20161015 12:34:21 -- Henri Miettinen,ks_silverstone-national,drift,507
+20161015 12:35:02 -- Henri Miettinen,ks_silverstone-national,drift,93
+20161015 12:37:23 -- Henri Miettinen,ks_silverstone-national,drift,5
+20161015 12:38:52 -- Henri Miettinen,ks_silverstone-national,drift,68
+20161015 12:39:09 -- Henri Miettinen,ks_silverstone-national,drift,132
+20161015 12:59:53 -- Henri Miettinen,ks_silverstone-national,drift,369
+20161015 13:00:29 -- Henri Miettinen,ks_silverstone-national,drift,39
+20161015 13:00:40 -- Henri Miettinen,ks_silverstone-national,drift,99
+20161015 13:01:40 -- Henri Miettinen,ks_silverstone-national,drift,46
+20161015 13:08:52 -- Henri Miettinen,ks_silverstone-national,drift,101
+20161015 13:08:56 -- Henri Miettinen,ks_silverstone-national,drift,36
+20161015 13:12:22 -- Henri Miettinen,ks_silverstone-national,drift,8
+20161015 13:16:26 -- Henri Miettinen,ks_silverstone-national,drift,1
+20161015 13:22:42 -- Henri Miettinen,ks_silverstone-national,drift,3
+20161015 13:32:32 -- Henri Miettinen,ks_silverstone-national,drift,1
+20161015 13:35:37 -- Henri Miettinen,ks_silverstone-national,drift,108
+20161015 13:42:51 -- Henri Miettinen,ks_silverstone-national,drift,195
+20161015 13:44:06 -- Henri Miettinen,ks_silverstone-national,drift,135
+20161015 13:45:23 -- Henri Miettinen,ks_silverstone-national,drift,52
+20161015 13:45:34 -- Henri Miettinen,ks_silverstone-national,drift,262
+20161015 13:45:40 -- Henri Miettinen,ks_silverstone-national,drift,15
+20161015 13:45:42 -- Henri Miettinen,ks_silverstone-national,drift,4
+20161015 13:49:34 -- Henri Miettinen,ks_silverstone-national,drift,331
+20161015 13:49:39 -- Henri Miettinen,ks_silverstone-national,drift,344
+20161015 13:49:44 -- Henri Miettinen,ks_silverstone-national,drift,79
+20161015 13:49:47 -- Henri Miettinen,ks_silverstone-national,drift,23
+20161015 13:49:52 -- Henri Miettinen,ks_silverstone-national,drift,116
+20161015 13:51:01 -- Henri Miettinen,ks_silverstone-national,drift,1
+20161015 13:51:02 -- Henri Miettinen,ks_silverstone-national,drift,108
+20161015 13:51:46 -- Henri Miettinen,ks_silverstone-national,drift,2
+20161015 13:57:19 -- Henri Miettinen,ks_silverstone-national,drift,56
+20161015 13:57:25 -- Henri Miettinen,ks_silverstone-national,drift,6
+20161015 13:58:59 -- Henri Miettinen,ks_silverstone-national,drift,17
+20161015 14:05:33 -- Henri Miettinen,ks_silverstone-national,drift,13
+20161015 14:05:35 -- Henri Miettinen,ks_silverstone-national,drift,111
+20161015 14:08:55 -- Henri Miettinen,ks_silverstone-national,drift,700
+20161015 14:09:08 -- Henri Miettinen,ks_silverstone-national,drift,28
+20161015 14:09:42 -- Henri Miettinen,ks_silverstone-national,drift,67
+20161015 14:09:48 -- Henri Miettinen,ks_silverstone-national,drift,37
+20161015 14:12:02 -- Henri Miettinen,ks_silverstone-national,drift,294
+20161015 14:12:11 -- Henri Miettinen,ks_silverstone-national,drift,30
+20161015 14:15:11 -- Henri Miettinen,ks_silverstone-national,drift,89
+20161015 14:17:32 -- Henri Miettinen,ks_silverstone-national,drift,35
+20161015 14:18:30 -- Henri Miettinen,ks_silverstone-national,drift,120
+20161015 14:49:44 -- Henri Miettinen,ks_silverstone-national,drift,106
+20161015 14:50:17 -- Henri Miettinen,ks_silverstone-national,drift,41
+20161015 14:50:46 -- Henri Miettinen,ks_silverstone-national,drift,124
+20161015 14:53:28 -- Henri Miettinen,ks_silverstone-national,drift,14
+20161015 14:57:13 -- Henri Miettinen,ks_silverstone-national,drift,1
+20161015 14:57:15 -- Henri Miettinen,ks_silverstone-national,drift,1
+20161015 14:57:17 -- Henri Miettinen,ks_silverstone-national,drift,163
+20161015 14:57:28 -- Henri Miettinen,ks_silverstone-national,drift,17
+20161015 14:59:56 -- Henri Miettinen,ks_silverstone-national,drift,6
+20161015 15:04:42 -- Henri Miettinen,ks_silverstone-national,drift,2
+20161015 15:06:07 -- Henri Miettinen,ks_silverstone-national,drift,6
+20161015 15:06:30 -- Henri Miettinen,ks_silverstone-national,drift,67
+20161015 15:12:22 -- Henri Miettinen,ks_silverstone-national,drift,1
+20161015 15:12:48 -- Henri Miettinen,ks_silverstone-national,drift,1
+20161015 15:13:12 -- Henri Miettinen,ks_silverstone-national,drift,231
+20161015 15:15:10 -- Henri Miettinen,ks_silverstone-national,drift,5
+20161015 15:15:37 -- Henri Miettinen,ks_silverstone-national,drift,35
+20161015 15:16:34 -- Henri Miettinen,ks_silverstone-national,drift,5
+20161015 15:19:44 -- Henri Miettinen,ks_silverstone-national,drift,130
+20161015 15:20:38 -- Henri Miettinen,ks_silverstone-national,drift,2
+20161015 15:20:43 -- Henri Miettinen,ks_silverstone-national,drift,421
+20161015 15:21:36 -- Henri Miettinen,ks_silverstone-national,drift,3
+20161015 15:21:54 -- Henri Miettinen,ks_silverstone-national,drift,105
+20161015 15:22:04 -- Henri Miettinen,ks_silverstone-national,drift,1
+20161015 15:23:40 -- Henri Miettinen,ks_silverstone-national,drift,1
+20161015 15:28:00 -- Henri Miettinen,ks_silverstone-national,drift,5
+20161015 15:29:46 -- Henri Miettinen,ks_silverstone-national,drift,6
+20161015 15:36:30 -- Henri Miettinen,ks_silverstone-national,drift,39
+20161015 15:42:30 -- Henri Miettinen,ks_silverstone-national,drift,57
+20161015 15:54:54 -- Henri Miettinen,ks_silverstone-national,drift,1
+20161015 15:54:57 -- Henri Miettinen,ks_silverstone-national,drift,78
+20161015 15:55:08 -- Henri Miettinen,ks_silverstone-national,drift,28
+20161015 15:57:08 -- Henri Miettinen,ks_silverstone-national,drift,3
+20161015 15:57:28 -- Henri Miettinen,ks_silverstone-national,drift,238
+20161015 15:58:21 -- Henri Miettinen,ks_silverstone-national,drift,3
+20161015 16:02:05 -- Henri Miettinen,ks_silverstone-national,drift,1
+20161015 16:03:59 -- Henri Miettinen,ks_silverstone-national,drift,5
+20161015 16:04:38 -- Henri Miettinen,ks_silverstone-national,drift,1
+20161015 16:04:40 -- Henri Miettinen,ks_silverstone-national,drift,70
+20161015 16:06:12 -- Henri Miettinen,ks_silverstone-national,drift,1
+20161015 16:12:13 -- Henri Miettinen,ks_silverstone-national,drift,68
+20161015 16:12:28 -- Henri Miettinen,ks_silverstone-national,drift,67
+20161015 16:14:44 -- Henri Miettinen,ks_silverstone-national,drift,150
+20161015 16:25:43 -- Henri Miettinen,ks_silverstone-national,drift,1
+20161015 16:25:45 -- Henri Miettinen,ks_silverstone-national,drift,517
+20161015 16:26:10 -- Henri Miettinen,ks_silverstone-national,drift,54
+20161015 16:32:57 -- Henri Miettinen,ks_silverstone-national,drift,305
+20161015 16:35:28 -- Henri Miettinen,ks_silverstone-national,drift,9
+20161015 16:35:30 -- Henri Miettinen,ks_silverstone-national,drift,358
+20161015 16:39:55 -- Henri Miettinen,ks_silverstone-national,drift,1
+20161015 16:39:58 -- Henri Miettinen,ks_silverstone-national,drift,690
+20161015 17:03:40 -- Henri Miettinen,ks_silverstone-national,drift,16
+20161015 17:08:05 -- Henri Miettinen,ks_silverstone-national,drift,9
+20161015 17:09:04 -- Henri Miettinen,ks_silverstone-national,drift,274
+20161015 17:09:34 -- Henri Miettinen,ks_silverstone-national,drift,52
+20161015 17:12:57 -- Henri Miettinen,ks_silverstone-national,drift,1
+20161015 17:13:00 -- Henri Miettinen,ks_silverstone-national,drift,171
+20161015 17:13:46 -- Henri Miettinen,ks_silverstone-national,drift,1
+20161015 17:13:49 -- Henri Miettinen,ks_silverstone-national,drift,10
+20161015 17:18:41 -- Henri Miettinen,ks_silverstone-national,drift,790
+20161015 17:18:42 -- Henri Miettinen,ks_silverstone-national,drift,12
+20161015 17:18:59 -- Henri Miettinen,ks_silverstone-national,drift,1
+20161015 17:19:01 -- Henri Miettinen,ks_silverstone-national,drift,383
+20161015 17:19:13 -- Henri Miettinen,ks_silverstone-national,drift,172
+20161015 17:19:50 -- Henri Miettinen,ks_silverstone-national,drift,9
+20161015 17:21:31 -- Henri Miettinen,ks_silverstone-national,drift,10
+20161015 17:23:04 -- Henri Miettinen,ks_silverstone-national,drift,212
+20161015 17:27:20 -- Henri Miettinen,ks_silverstone-national,drift,159
+20161015 17:29:23 -- Henri Miettinen,ks_silverstone-national,drift,1266
+20161015 17:33:05 -- Henri Miettinen,ks_silverstone-national,drift,48
+20161015 17:33:17 -- Henri Miettinen,ks_silverstone-national,drift,21
+20161015 17:34:09 -- Henri Miettinen,ks_silverstone-national,drift,3
+20161015 17:36:28 -- Henri Miettinen,ks_silverstone-national,drift,706
+20161015 17:37:10 -- Henri Miettinen,ks_silverstone-national,drift,38
+20161015 17:40:23 -- Henri Miettinen,ks_silverstone-national,drift,60
+20161015 17:41:24 -- Henri Miettinen,ks_silverstone-national,drift,149
+20161015 17:43:36 -- Henri Miettinen,ks_silverstone-national,drift,55
+20161015 17:43:46 -- Henri Miettinen,ks_silverstone-national,drift,54
+20161015 17:52:09 -- Henri Miettinen,ks_silverstone-national,drift,399
+20161015 18:07:41 -- Henri Miettinen,ks_silverstone-national,drift,11
+20161015 18:08:57 -- Henri Miettinen,ks_silverstone-national,drift,40
+20161015 18:10:30 -- Henri Miettinen,ks_silverstone-national,drift,330
+20161015 18:17:21 -- Henri Miettinen,ks_silverstone-national,drift,3
+20161015 18:25:20 -- Henri Miettinen,ks_silverstone-national,drift,15
+20161015 18:37:54 -- Henri Miettinen,ks_silverstone-national,drift,2
+20161015 18:38:03 -- Henri Miettinen,ks_silverstone-national,drift,146
+20161015 18:38:08 -- Henri Miettinen,ks_silverstone-national,drift,144
+20161015 18:38:44 -- Henri Miettinen,ks_silverstone-national,drift,40
+20161015 18:44:44 -- Henri Miettinen,ks_silverstone-national,drift,88
+20161015 18:46:41 -- Henri Miettinen,ks_silverstone-national,drift,170
+20161015 19:05:04 -- Henri Miettinen,ks_silverstone-national,drift,3
+20161015 19:06:07 -- Henri Miettinen,ks_silverstone-national,drift,1
+20161015 19:06:21 -- Henri Miettinen,ks_silverstone-national,drift,31
+20161015 19:07:29 -- Henri Miettinen,ks_silverstone-national,drift,223
+20161015 19:08:21 -- Henri Miettinen,ks_silverstone-national,drift,3
+20161015 19:10:55 -- Henri Miettinen,ks_silverstone-national,drift,53
+20161015 19:13:04 -- Henri Miettinen,ks_silverstone-national,drift,143
+20161015 19:14:12 -- Henri Miettinen,ks_silverstone-national,drift,141
+20161015 19:14:15 -- Henri Miettinen,ks_silverstone-national,drift,468
+20161015 19:20:26 -- Henri Miettinen,ks_silverstone-national,drift,123
+20161015 19:20:30 -- Henri Miettinen,ks_silverstone-national,drift,2
+20161015 19:21:42 -- Henri Miettinen,ks_silverstone-national,drift,3
+20161015 19:29:31 -- Henri Miettinen,ks_silverstone-national,drift,8
+20161015 19:35:16 -- Henri Miettinen,ks_silverstone-national,drift,29
+20161015 19:47:11 -- Henri Miettinen,ks_silverstone-national,drift,345
+20161015 19:47:18 -- Henri Miettinen,ks_silverstone-national,drift,11
+20161015 20:03:26 -- Henri Miettinen,ks_silverstone-national,drift,80
+20161015 20:07:04 -- Henri Miettinen,ks_silverstone-national,drift,84
+20161015 20:13:15 -- Henri Miettinen,ks_silverstone-national,drift,18
+20161015 20:13:18 -- Henri Miettinen,ks_silverstone-national,drift,15
+20161015 20:14:00 -- Henri Miettinen,ks_silverstone-national,drift,3
+20161015 20:16:49 -- Henri Miettinen,ks_silverstone-national,drift,3
+20161015 20:19:30 -- Henri Miettinen,ks_silverstone-national,drift,5
+20161015 20:20:50 -- Henri Miettinen,ks_silverstone-national,drift,3
+20161015 20:28:52 -- Henri Miettinen,ks_silverstone-national,drift,6
+20161015 20:45:55 -- Henri Miettinen,ks_silverstone-national,drift,2
+20161015 21:06:39 -- Henri Miettinen,ks_silverstone-national,drift,1
+20161015 21:06:40 -- Henri Miettinen,ks_silverstone-national,drift,708
+20161015 21:12:56 -- Henri Miettinen,ks_silverstone-national,drift,12
+20161015 21:13:02 -- Henri Miettinen,ks_silverstone-national,drift,1
+20161015 21:22:10 -- Henri Miettinen,ks_silverstone-national,drift,51
+20161015 21:23:05 -- Henri Miettinen,ks_silverstone-national,drift,5
+20161015 21:24:37 -- Henri Miettinen,ks_silverstone-national,drift,1
+20161015 21:24:40 -- Henri Miettinen,ks_silverstone-national,drift,446
+20161015 21:25:20 -- Henri Miettinen,ks_silverstone-national,drift,1
+20161015 21:25:28 -- Henri Miettinen,ks_silverstone-national,drift,22
+20161015 21:25:32 -- Henri Miettinen,ks_silverstone-national,drift,51
+20161015 21:25:53 -- Henri Miettinen,ks_silverstone-national,drift,185
+20161015 21:25:57 -- Henri Miettinen,ks_silverstone-national,drift,243
+20161015 21:26:03 -- Henri Miettinen,ks_silverstone-national,drift,20
+20161015 21:26:06 -- Henri Miettinen,ks_silverstone-national,drift,8
+20161015 21:26:12 -- Henri Miettinen,ks_silverstone-national,drift,319
+20161015 21:26:14 -- Henri Miettinen,ks_silverstone-national,drift,11
+20161015 21:27:44 -- Henri Miettinen,ks_silverstone-national,drift,91
+20161015 21:27:56 -- Henri Miettinen,ks_silverstone-national,drift,10
+20161015 21:35:11 -- Henri Miettinen,ks_silverstone-national,drift,1
+20161015 21:42:21 -- Henri Miettinen,ks_silverstone-national,drift,38
+20161015 21:44:11 -- Henri Miettinen,ks_silverstone-national,drift,4
+20161015 22:04:24 -- Henri Miettinen,ks_silverstone-national,drift,99
+20161016 12:29:01 -- Henri Miettinen,ks_silverstone-national,drift,17
+20161016 12:29:23 -- Henri Miettinen,ks_silverstone-national,drift,32
+20161016 12:29:27 -- Henri Miettinen,ks_silverstone-national,drift,20
+20161016 12:30:02 -- Henri Miettinen,ks_silverstone-national,drift,499
+20161016 12:30:59 -- Henri Miettinen,ks_silverstone-national,drift,2
+20161016 12:32:46 -- Henri Miettinen,ks_silverstone-national,drift,302
+20161016 12:33:21 -- Henri Miettinen,ks_silverstone-national,drift,2
+20161016 12:36:14 -- Henri Miettinen,ks_silverstone-national,drift,163
+20161016 12:36:44 -- Henri Miettinen,ks_silverstone-national,drift,34
+20161016 12:36:59 -- Henri Miettinen,ks_silverstone-national,drift,182
+20161016 12:39:01 -- Henri Miettinen,ks_silverstone-national,drift,2
+20161016 12:39:10 -- Henri Miettinen,ks_silverstone-national,drift,2
+20161016 12:39:38 -- Henri Miettinen,ks_silverstone-national,drift,48
+20161016 12:47:44 -- Henri Miettinen,ks_silverstone-national,drift,429
+20161016 12:50:00 -- Henri Miettinen,ks_silverstone-national,drift,103
+20161016 12:51:41 -- Henri Miettinen,ks_silverstone-national,drift,109
+20161202 12:34:21 -- player5,testirata,race,30
+20161202 12:35:11 -- player5,testirata,race,30
+20161202 12:37:35 -- player5,testirata,race,30
+20161202 16:13:23 -- player5,testirata,race,30
+20161202 20:39:42 -- Tomi Makinen,drift-,drift,300
+20161202 20:39:43 -- Tomi Makinen,drift-,drift,300
+20161202 20:39:44 -- Tomi Makinen,drift-,drift,300
+20161202 20:49:03 -- Tomi Makinen,drift-,drift,65
+20161202 20:49:04 -- Tomi Makinen,drift-,drift,65
+20161202 20:49:05 -- Tomi Makinen,drift-,drift,65
+20161202 20:49:06 -- Tomi Makinen,drift-,drift,65
+20161202 20:49:07 -- Tomi Makinen,drift-,drift,65
+20161202 20:49:08 -- Tomi Makinen,drift-,drift,65
+20161202 20:49:09 -- Tomi Makinen,drift-,drift,65
+20161202 20:49:10 -- Tomi Makinen,drift-,drift,65
+20161202 20:49:11 -- Tomi Makinen,drift-,drift,65
+20161202 20:49:12 -- Tomi Makinen,drift-,drift,65
+20161202 20:49:13 -- Tomi Makinen,drift-,drift,65
+20161202 20:49:14 -- Tomi Makinen,drift-,drift,65
+20161202 20:49:15 -- Tomi Makinen,drift-,drift,65
+20161202 20:49:16 -- Tomi Makinen,drift-,drift,65
+20161202 20:49:17 -- Tomi Makinen,drift-,drift,65
+20161202 20:49:18 -- Tomi Makinen,drift-,drift,65
+20161202 20:49:19 -- Tomi Makinen,drift-,drift,65
+20161202 20:49:20 -- Tomi Makinen,drift-,drift,65
+20161202 20:49:21 -- Tomi Makinen,drift-,drift,65
+20161202 20:49:22 -- Tomi Makinen,drift-,drift,65
+20161202 20:49:23 -- Tomi Makinen,drift-,drift,65
+20161202 20:49:24 -- Tomi Makinen,drift-,drift,65
+20161202 20:49:26 -- Tomi Makinen,drift-,drift,422
+20161202 20:49:27 -- Tomi Makinen,drift-,drift,422
+20161202 20:49:28 -- Tomi Makinen,drift-,drift,422
+20161202 20:49:29 -- Tomi Makinen,drift-,drift,422
+20161202 20:54:34 -- BIM,aosta-grand_sport,drift,137
+20161202 20:54:35 -- BIM,aosta-grand_sport,drift,137
+20161202 20:54:36 -- BIM,aosta-grand_sport,drift,137
+20161202 20:54:37 -- BIM,aosta-grand_sport,drift,137
+20161202 20:54:38 -- BIM,aosta-grand_sport,drift,137
+20161202 20:54:39 -- BIM,aosta-grand_sport,drift,137
+20161202 20:54:40 -- BIM,aosta-grand_sport,drift,137
+20161202 20:54:41 -- BIM,aosta-grand_sport,drift,137
+20161202 20:54:42 -- BIM,aosta-grand_sport,drift,137
+20161202 20:54:45 -- BIM,aosta-grand_sport,drift,247
+20161202 20:54:46 -- BIM,aosta-grand_sport,drift,247
+20161202 20:54:47 -- BIM,aosta-grand_sport,drift,247
+20161202 20:54:49 -- BIM,aosta-grand_sport,drift,247
+20161202 20:54:50 -- BIM,aosta-grand_sport,drift,247
+20161202 20:54:51 -- BIM,aosta-grand_sport,drift,247
+20161202 20:54:52 -- BIM,aosta-grand_sport,drift,247
+20161202 20:54:53 -- BIM,aosta-grand_sport,drift,247
+20161202 20:54:54 -- BIM,aosta-grand_sport,drift,247
+20161202 23:33:02 -- Tomi Makinen,drift-,drift,270
+20161202 23:33:03 -- Tomi Makinen,drift-,drift,270
+20161202 23:33:05 -- Tomi Makinen,drift-,drift,270
+20161202 23:33:06 -- Tomi Makinen,drift-,drift,270
+20161202 23:33:07 -- Tomi Makinen,drift-,drift,270
+20161202 23:33:08 -- Tomi Makinen,drift-,drift,270
+20161202 23:33:09 -- Tomi Makinen,drift-,drift,270
+20161202 23:33:10 -- Tomi Makinen,drift-,drift,270
+20161202 23:33:11 -- Tomi Makinen,drift-,drift,270
+20161202 23:33:12 -- Tomi Makinen,drift-,drift,270
+20161202 23:33:13 -- Tomi Makinen,drift-,drift,270
+20161202 23:33:14 -- Tomi Makinen,drift-,drift,270
+20161202 23:33:15 -- Tomi Makinen,drift-,drift,270
+20161202 23:33:16 -- Tomi Makinen,drift-,drift,270
+20161202 23:33:17 -- Tomi Makinen,drift-,drift,270
+20161202 23:33:18 -- Tomi Makinen,drift-,drift,270
+20161202 23:33:19 -- Tomi Makinen,drift-,drift,270
+20161202 23:33:20 -- Tomi Makinen,drift-,drift,270
+20161202 23:33:22 -- Tomi Makinen,drift-,drift,270
+20161202 23:33:23 -- Tomi Makinen,drift-,drift,270
+20161202 23:33:24 -- Tomi Makinen,drift-,drift,270
+20161202 23:33:25 -- Tomi Makinen,drift-,drift,270
+20161202 23:33:26 -- Tomi Makinen,drift-,drift,270
+20161202 23:36:23 -- Tomi Makinen,drift-,drift,21
+20161202 23:36:24 -- Tomi Makinen,drift-,drift,21
+20161202 23:36:26 -- Tomi Makinen,drift-,drift,21
+20161202 23:36:27 -- Tomi Makinen,drift-,drift,21
+20161202 23:36:28 -- Tomi Makinen,drift-,drift,21
+20161202 23:36:29 -- Tomi Makinen,drift-,drift,21
+20161202 23:36:31 -- Tomi Makinen,drift-,drift,21
+20161202 23:36:36 -- Tomi Makinen,drift-,drift,215
+20161202 23:36:37 -- Tomi Makinen,drift-,drift,215
+20161202 23:36:38 -- Tomi Makinen,drift-,drift,215
+20161202 23:36:40 -- Tomi Makinen,drift-,drift,215
+20161202 23:36:41 -- Tomi Makinen,drift-,drift,215
+20161202 23:36:42 -- Tomi Makinen,drift-,drift,215
+20161202 23:36:44 -- Tomi Makinen,drift-,drift,215
+20161202 23:36:45 -- Tomi Makinen,drift-,drift,215
+20161202 23:36:46 -- Tomi Makinen,drift-,drift,215
+20161202 23:36:50 -- Tomi Makinen,drift-,drift,215
+20161202 23:36:51 -- Tomi Makinen,drift-,drift,215
+20161202 23:36:52 -- Tomi Makinen,drift-,drift,215
+20161202 23:38:47 -- Tomi Makinen,drift-,drift,38
+20161202 23:39:01 -- Tomi Makinen,drift-,drift,38
+20161202 23:39:10 -- Tomi Makinen,drift-,drift,14
+20161202 23:39:24 -- Tomi Makinen,drift-,drift,18
+20161202 23:39:39 -- Tomi Makinen,drift-,drift,8
+20161202 23:39:41 -- Tomi Makinen,drift-,drift,31
+20161202 23:39:55 -- Tomi Makinen,drift-,drift,58
+20161202 23:40:07 -- Tomi Makinen,drift-,drift,142
+20161202 23:40:20 -- Tomi Makinen,drift-,drift,60
+20161202 23:40:40 -- Tomi Makinen,drift-,drift,391
+20161202 23:40:51 -- Tomi Makinen,drift-,drift,2
+20161202 23:40:54 -- Tomi Makinen,drift-,drift,3
+20161202 23:43:28 -- Tomi Makinen,drift-,drift,364
+20161202 23:43:31 -- Tomi Makinen,drift-,drift,37
+20161202 23:43:44 -- Tomi Makinen,drift-,drift,32
