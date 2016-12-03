@@ -1,5 +1,5 @@
 <?php
-
+  $delimitter = '(chs)';
   function send_response($status, $status_message, $data)
 	{
 		header("HTTP/1.1 $status $status_message");
@@ -25,6 +25,7 @@
 			}
 	function update_drift_score($msg)
 	{
+    global $delimitter;
     $donotupdate = false;
 		$name = $msg['name'];
 		if(!empty($msg['track']) && !empty($msg['mode']) && !empty($msg['name'])  && !empty($msg['score']))
@@ -33,7 +34,7 @@
 			$removechars = array(' ','.','.');
 			$entry[$name] = $msg;
 			$msg["updateTime"] = date("Ymd H:i:s");
-			$filename = sprintf("club_highscores/%s-%s.json",$msg['track'],$msg['mode']);
+			$filename = sprintf("club_highscores/%s%s%s.json",$msg['track'],$delimitter,$msg['mode']);
 	
 			if(file_exists($filename))
 			{
@@ -64,6 +65,7 @@
 	
 	function update_time_score($msg)
 	{
+    global $delimitter;
     $donotupdate = false;
 		$name = $msg['name'];
 		if(!empty($msg['track']) && !empty($msg['mode']) && !empty($msg['name'])  && !empty($msg['time']))
@@ -74,7 +76,7 @@
 			$update_entry['name'] = $name;
 			//$entry = [];
 			$entry[$name] = $entry;
-			$filename = sprintf("club_highscores/%s-%s.json",$msg['track'],$msg['mode']);
+			$filename = sprintf("club_highscores/%s%s%s.json",$msg['track'],$delimitter,$msg['mode']);
 	
 			if(file_exists($filename))
 			{
@@ -129,7 +131,7 @@
     case 'GET':
 		  if(!empty($_GET['track']) && !empty($_GET['mode']))
 		  {
-			$filename = sprintf("club_highscores/%s-%s.json",$_GET['track'],$_GET['mode']);
+			$filename = sprintf("club_highscores/%s%s%s.json",$_GET['track'],$delimitter,$_GET['mode']);
 			echo file_get_contents($filename);
 		  }
 		  else echo file_get_contents("club_highscores/scorelog.txt");

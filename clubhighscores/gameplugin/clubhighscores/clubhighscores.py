@@ -36,6 +36,7 @@ lastdi = 0
 maxdi = 6
 updateinterval = 0.3
 deltaTime = 0;
+sessionDataSent = 0;
 
 
 def acMain(ac_version):
@@ -63,7 +64,7 @@ def acUpdate(deltaT):
     if di != lastdi:
       driftInvalid = driftInvalid + 1;
       #ac.console("drift invalid");      
-    if driftInvalid >= maxdi:
+    if driftInvalid >= maxdi or info.physics.numberOfTyresOut > 1:
       waitForInvalid = 0;
       lastdi = 0;
       driftInvalid = 0;
@@ -103,6 +104,9 @@ def acUpdate(deltaT):
     storeDriftScore = lastDrift;
     cumulativescore = cumulativescore + lastDrift;
   lastDrift = cs
+
+  if info.graphics.numberOfLaps == info.graphics.completedLaps and info.graphics.numberOfLaps > 0:      
+      SendSessionData();
   return;
 
 def GetScoresFromServer(params):
@@ -147,14 +151,17 @@ def SendCurrentTime():
   SendScore(data);
   return;  
 
-def acShutdown():
+def SendSessionData():
     #send cumulatice score
-    global cumulativescore, server_connection_ok
+    global cumulativescore, server_connection_ok,sessionDataSent
+    if sessionDataSent > 0:
+        return;
+    sessionDataSent = sessionDataSent + 1;
     if server_connection_ok == 0:
         return;
-    
+
     session = info.graphics.session
-    session_string = other;
+    session_string = "other";
     laps = ac.getCarState(0, acsys.CS.LapCount)
     if laps < 1:
         laps = 1;
@@ -165,6 +172,12 @@ def acShutdown():
     if session == 2:
         session_string = "race";
     data = {"name":ac.getDriverName(0),"track":ac.getTrackName(0)+"-"+ac.getTrackConfiguration(0),
-            "mode":session_string,"car":ac.getCarName(0),"score":str(cumulativescore),"laps":str(laps),"lapscore":str(cumulativescore/laps)}
+            "mode":session_string,"car":ac.getCarName(0),"score":str(cumulativescore),"laps":str(laps),
+            "bestlap":str(info.graphics.iBestTime),"average_score_per_lap":str(cumulativescore/laps),
+            "score_per_km":str(cumulativescore/(info.graphics.distanceTraveled/1000))}
     SendScore(data);
+    return;
+
+def acShutdown():
+    SendSessionData();
     return;

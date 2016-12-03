@@ -35,7 +35,7 @@
     case 'GET':
       $dir    = 'club_highscores';
 			$files1 = scandir($dir);
-			$delimiter = '-';
+			$delimiter = '(chs)';
 			//print_r($files1);
 			echo "Available scores:<br/>";
 			foreach ($files1 as $f )

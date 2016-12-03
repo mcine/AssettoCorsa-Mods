@@ -1,4 +1,5 @@
 <?php
+  $delimitter = '(chs)';
   function send_response($status, $status_message, $data)
 	{
 		header("HTTP/1.1 $status $status_message");
@@ -35,7 +36,7 @@
     case 'GET':
       if(!empty($_GET['track']) && !empty($_GET['mode']))
 		  {
-				$filename = sprintf("club_highscores/%s-%s.json",$_GET['track'],$_GET['mode']);
+				$filename = sprintf("club_highscores/%s%s%s.json",$_GET['track'],$delimitter,$_GET['mode']);
 				if(file_exists($filename))
 				{
 					$scoretable = json_decode(file_get_contents($filename),true);
