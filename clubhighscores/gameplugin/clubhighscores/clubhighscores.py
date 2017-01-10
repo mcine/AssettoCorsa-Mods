@@ -29,14 +29,17 @@ lastlaptimelabel=0
 lapcount=0
 lastDrift=0
 storeDriftScore=0
+highscore = 0
 driftInvalid=0
 waitForInvalid=0
 waitTime = 1
 lastdi = 0
-maxdi = 6
-updateinterval = 0.3
+maxdi = 3
+updateinterval = 0.5
 deltaTime = 0;
-sessionDataSent = 0;
+sessionDataSent = 0
+invalidDriftCounter = 0
+invalidDriftInterval = 3
 
 
 def acMain(ac_version):
@@ -52,18 +55,13 @@ def acMain(ac_version):
   ac.setPosition(scorelabel, 3, 50); #73
   UpdateScores();
   return "clubhighscores"
-	
-def acUpdate(deltaT):
-  global scorelabel, lapcount,currentscorelabel,lastDrift,driftInvalid,waitTime,waitForInvalid,lastdi,maxdi,deltaTime,updateinterval,lastlaptimelabel,storeDriftScore,server_connection_ok,cumulativescore
-  if server_connection_ok == 0:
-    return;
-    
-  if waitForInvalid > 0:
+
+def checkForInvalidDrift(deltaT):
+    global waitForInvalid,lastdi,driftInvalid,maxdi,storeDriftScore
     waitForInvalid = waitForInvalid - deltaT;
     di = ac.getCarState(0, acsys.CS.IsDriftInvalid);
     if di != lastdi:
-      driftInvalid = driftInvalid + 1;
-      #ac.console("drift invalid");      
+      driftInvalid = driftInvalid + 1;      
     if driftInvalid >= maxdi or info.physics.numberOfTyresOut > 1:
       waitForInvalid = 0;
       lastdi = 0;
@@ -72,43 +70,58 @@ def acUpdate(deltaT):
       ac.setText(currentscorelabel, "Drift invalid");      
     else:
       lastdi = di;
-    return;    
+    return;
+	
+def acUpdate(deltaT):
+  global scorelabel, lapcount,currentscorelabel,lastDrift,driftInvalid,waitTime,waitForInvalid,maxdi,lastdi
+  global deltaTime,updateinterval,lastlaptimelabel,storeDriftScore,server_connection_ok,cumulativescore
+  global invalidDriftCounter,invalidDriftInterval,highscore
+  if server_connection_ok == 0:
+    return;
+
+  if waitForInvalid > 0 and invalidDriftCounter >= invalidDriftInterval:
+    checkForInvalidDrift(deltaT);
+    invalidDriftCounter=0;
+  invalidDriftCounter = invalidDriftCounter + 1;     
     
   if waitForInvalid < 0:
-    SendCurrentScore();              
-    driftInvalid = 0;
-    lastdi = 0;
-    waitForInvalid = 0;
-    storeDriftScore = 0;
-    #ac.console("score sent");
+    SendCurrentScore();
+    
   deltaTime = deltaTime+deltaT;
   if deltaTime <= updateinterval:    
-    return;  
+    return;
   deltaTime = 0;
+
+  handleDrifting()
+  
   #laps = ac.getCarState(0, acsys.CS.LapCount);
-  cs = round(ac.getCarState(0, acsys.CS.InstantDrift));     
-  if cs > 0:
-    if ac.getCarState(0, acsys.CS.IsDriftInvalid):
-      driftInvalid = 1;
-    if driftInvalid == 1:
-      ac.setText(currentscorelabel, "Drift invalid");
-    else:
-      ac.setText(currentscorelabel, "Drift Score: " + str(cs));    
  # if laps > lapcount:
  #   ac.console("lap inc");
  #   lapcount = laps;
  #   ac.setText(lastlaptimelabel, str(ac.getCarState(0, acsys.CS.LastLap)));
  #   SendCurrentTime();
-  if lastDrift > cs:
-    waitForInvalid = waitTime;
-    storeDriftScore = lastDrift;
-    cumulativescore = cumulativescore + lastDrift;
-  lastDrift = cs
 
   if info.graphics.numberOfLaps == info.graphics.completedLaps and info.graphics.numberOfLaps > 0:      
       SendSessionData();
+      #ac.console("Session data sent")  
   return;
 
+def handleDrifting():
+  global currentscorelabel,lastDrift,highscore,waitForInvalid,waitTime,storeDriftScore
+  cs = round(ac.getCarState(0, acsys.CS.InstantDrift));     
+  if cs > 0:
+    if ac.getCarState(0, acsys.CS.IsDriftInvalid):      
+      resetDriftScoring()
+      ac.setText(currentscorelabel, "Drift invalid");
+    else:
+      ac.setText(currentscorelabel, "Drift Score: " + str(cs));
+  if lastDrift > cs: # drift done
+    if lastDrift > highscore: # do not send if not highscore drift
+        waitForInvalid = waitTime;
+        storeDriftScore = lastDrift;    
+  lastDrift = cs
+
+  
 def GetScoresFromServer(params):
   try:    
     with urllib2.urlopen(server_url+params) as resp:
@@ -142,9 +155,22 @@ def SendScore(pdata):
   return ""
   
 def SendCurrentScore():
-  data = {"name":ac.getDriverName(0),"track":ac.getTrackName(0)+"-"+ac.getTrackConfiguration(0),"mode":"drift","score":str(storeDriftScore),"car":ac.getCarName(0)}
-  SendScore(data);
+  global highscore, storeDriftScore
+  if highscore < storeDriftScore:
+    highscore = storeDriftScore
+    data = {"name":ac.getDriverName(0),"track":ac.getTrackName(0)+"-"+ac.getTrackConfiguration(0),"mode":"drift","score":str(storeDriftScore),"car":ac.getCarName(0)}
+    SendScore(data)  
+  #ac.console("current score sent: "+str(storeDriftScore))
+  resetDriftScoring()
   return;
+
+def resetDriftScoring():
+  global driftInvalid,cumulativescore,storeDriftScore,lastDrift,lastdi,waitForInvalid,storeDriftScore
+  cumulativescore = storeDriftScore + lastDrift;
+  driftInvalid = 0;
+  lastdi = 0;
+  waitForInvalid = 0;
+  storeDriftScore = 0;
   
 def SendCurrentTime():
   data = {"name":ac.getDriverName(0),"track":ac.getTrackName(0)+"-"+ac.getTrackConfiguration(0),"mode":"time","car":ac.getCarName(0),"laptime":str(ac.getCarState(0,acsys.CS.LastLap))}
