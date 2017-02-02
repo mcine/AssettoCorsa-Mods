@@ -20,7 +20,7 @@ os.environ['PATH'] = os.environ['PATH'] + ";."
 import urllib.request as urllib2
 from sim_info import info
 
-server_url = "http://clubhighscores.servebeer.com/Website/club_highscores.php";
+server_url = "http://clubhighscores.000webhostapp.com/club_highscores.php";
 server_connection_ok=0
 scorelabel=0
 currentscorelabel=0
