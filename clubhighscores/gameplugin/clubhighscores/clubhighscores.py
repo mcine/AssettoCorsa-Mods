@@ -19,6 +19,7 @@ os.environ['PATH'] = os.environ['PATH'] + ";."
     
 import urllib.request as urllib2
 from sim_info import info
+import threading
 
 server_url = "http://clubhighscores.000webhostapp.com/club_highscores.php";
 server_connection_ok=0
@@ -94,10 +95,12 @@ def acUpdate(deltaT):
 
   handleDrifting()
   
-  #laps = ac.getCarState(0, acsys.CS.LapCount);
- # if laps > lapcount:
- #   ac.console("lap inc");
- #   lapcount = laps;
+  laps = ac.getCarState(0, acsys.CS.LapCount);
+  if laps > lapcount:
+      t = threading.Thread(target=UpdateScores, args = ())
+      t.start()
+      #ac.console("lap inc");
+      lapcount = laps;
  #   ac.setText(lastlaptimelabel, str(ac.getCarState(0, acsys.CS.LastLap)));
  #   SendCurrentTime();
 
@@ -116,9 +119,9 @@ def handleDrifting():
     else:
       ac.setText(currentscorelabel, "Drift Score: " + str(cs));
   if lastDrift > cs: # drift done
-    if lastDrift > highscore: # do not send if not highscore drift
-        waitForInvalid = waitTime;
-        storeDriftScore = lastDrift;    
+    #if lastDrift > highscore: # do not send if not highscore drift
+    waitForInvalid = waitTime;
+    storeDriftScore = lastDrift;    
   lastDrift = cs
 
   
@@ -143,13 +146,14 @@ def UpdateScores():
     scores += key + ':' + scorejson[key]['score']+'\n'
   ac.setText(scorelabel, scores);
   server_connection_ok = 1;
+  #ac.console("update scores");
   return;
   
 def SendScore(pdata):
   try:
     req = urllib2.Request(server_url)
     req.add_header('Content-Type', 'application/json')
-    response = urllib2.urlopen(req, json.dumps(pdata).encode('utf-8'))     
+    urllib2.urlopen(req, json.dumps(pdata).encode('utf-8'))
   except:     
     response = ""
   return ""
@@ -159,9 +163,11 @@ def SendCurrentScore():
   if highscore < storeDriftScore:
     highscore = storeDriftScore
     data = {"name":ac.getDriverName(0),"track":ac.getTrackName(0)+"-"+ac.getTrackConfiguration(0),"mode":"drift","score":str(storeDriftScore),"car":ac.getCarName(0)}
-    SendScore(data)  
-  #ac.console("current score sent: "+str(storeDriftScore))
-  resetDriftScoring()
+    t = threading.Thread(target=SendScore, args = (data,))
+    #t.daemon = True
+    t.start()
+    resetDriftScoring()
+  #ac.console("current score sent: "+str(storeDriftScore))  
   return;
 
 def resetDriftScoring():
