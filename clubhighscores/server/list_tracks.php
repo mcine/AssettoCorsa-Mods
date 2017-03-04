@@ -37,22 +37,24 @@
 			$files1 = scandir($dir);
 			$delimiter = '(chs)';
 			//print_r($files1);
+			
 			echo "Available scores:<br/>";
+			echo '<table cellspacing="1" cellpadding="4" border="3" bgcolor="#f5f5f5"><tbody><tr><th>track</th><th>mode</th></tr>';
 			foreach ($files1 as $f )
 			{
+				echo "<tr>";
 				if (strpos($f,$delimiter ) !== false) 
 				{
 					$name = explode(".json",$f);
 					$parts = explode($delimiter,$name[0]);
 					//print_r ($parts);
-					echo "<a href='print_scores.php?track=",$parts[0],"&mode=",$parts[1], "'>";
-	      	echo "track: ", $parts[0], " Mode: ", $parts[1], "\n";
-	      	echo "</a><br/>";
+					echo "<td><a href='print_scores.php?track=",$parts[0],"&mode=",$parts[1], "'>";
+					echo $parts[0], "</td><td>", $parts[1], "</td>";
 				}
+				echo "</tr>";
 			}
+			echo '</tbody></table>';
 		  //send_response(200, "", "");
 		  break;
 	}  
-	
-	
 ?>

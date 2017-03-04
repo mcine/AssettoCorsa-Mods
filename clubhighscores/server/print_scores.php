@@ -49,19 +49,23 @@
 							array_push($keyarray,$key);	
 						}
 					}
+					echo '<table cellspacing="1" cellpadding="4" border="3" bgcolor="#f5f5f5"><tbody><tr>';
+			
 					foreach ($keyarray as $k )
 					{
-						echo $k, " ";
+						echo "<th>",$k, "</th>";
 					}
-					echo "<br/>";
+					echo "</tr>";
 					foreach ($scoretable as $i )
 					{
+						echo "<tr>";
 						foreach ($keyarray as $k )
 						{
-							echo $i[$k], " ";
+							echo "<td>",$i[$k], "</td>";
 						}
-						echo "<br/>";
+						echo "</tr>";
 					}
+					echo '</tbody></table>';
 				}
 				
 		  }
