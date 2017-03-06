@@ -40,19 +40,33 @@
 			
 			echo "Available scores:<br/>";
 			echo '<table cellspacing="1" cellpadding="4" border="3" bgcolor="#f5f5f5"><tbody><tr><th>track</th><th>mode</th></tr>';
+			$lastTrack = "";
 			foreach ($files1 as $f )
 			{
-				echo "<tr>";
+				
+				
 				if (strpos($f,$delimiter ) !== false) 
 				{
 					$name = explode(".json",$f);
 					$parts = explode($delimiter,$name[0]);
 					//print_r ($parts);
-					echo "<td><a href='print_scores.php?track=",$parts[0],"&mode=",$parts[1], "'>";
-					echo $parts[0], "</td><td>", $parts[1], "</td>";
+					##echo "<td>";
+					if ($lastTrack == $parts[0])
+					{
+						echo "<td><a href='print_scores.php?track=",$parts[0],"&mode=",$parts[1], "'>", $parts[1],"</a></td>";
+					}
+					else 
+					{
+						if ($lastTrack != "") echo "</td></tr>";
+						echo "<tr>";
+						echo "<td>",$parts[0], "</td><td><a href='print_scores.php?track=",$parts[0],"&mode=",$parts[1], "'>", $parts[1],"</a></td>" ;
+					}
+					//if($lastTrack != "" and lastTrack != $parts[0]) echo "</tr>";
+					$lastTrack = $parts[0];
 				}
-				echo "</tr>";
+				
 			}
+			echo "</td></tr>";
 			echo '</tbody></table>';
 		  //send_response(200, "", "");
 		  break;
