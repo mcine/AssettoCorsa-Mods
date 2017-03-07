@@ -11,6 +11,15 @@
 		echo $json_responce;
 	}
 	
+  function ms_to_lap_time($millis) {
+    //$hrs = intval($millis / 3600000);
+    $mins = str_pad(intval($millis / 60000) % 60, 2, '0', STR_PAD_LEFT);
+    $secs = str_pad(intval($millis / 1000) % 60, 2, '0', STR_PAD_LEFT);
+    $milli = str_pad($millis % 1000, 3, '0', STR_PAD_LEFT);
+    return "$mins:$secs.$milli";
+  }
+
+	
 	header ("Content-Type:text/html");
   $method = $_SERVER['REQUEST_METHOD'];
    
@@ -61,7 +70,11 @@
 						echo "<tr>";
 						foreach ($keyarray as $k )
 						{
-							echo "<td>",$i[$k], "</td>";
+							if($k == "bestlap" or $k == "laptime")
+							{
+								echo "<td>",ms_to_lap_time($i[$k]), "</td>";
+							}
+							else echo "<td>",$i[$k], "</td>";
 						}
 						echo "</tr>";
 					}
