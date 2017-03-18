@@ -74,7 +74,15 @@
 							{
 								echo "<td>",ms_to_lap_time($i[$k]), "</td>";
 							}
-							else echo "<td>",$i[$k], "</td>";
+							else
+              {
+                if(isset($i[$k]))
+                {
+                  echo "<td>",$i[$k], "</td>";
+                }
+                else echo "<td></td>";
+                
+              }                
 						}
 						echo "</tr>";
 					}
