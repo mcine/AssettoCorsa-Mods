@@ -1,5 +1,6 @@
 <?php
   $delimitter = '(chs)';
+  $server_version = 1;
   function send_response($status, $status_message, $data)
 	{
 		header("HTTP/1.1 $status $status_message");
@@ -23,6 +24,7 @@
 	function myTimeSort($a, $b) { //Sort the array using a user defined function
     			return ($a['time']) < ($b['time']) ? -1 : 1; //Compare the scores
 			}
+			
 	function update_drift_score($msg)
 	{
     global $delimitter;
@@ -40,26 +42,26 @@
 			{
 				$scoretable = json_decode(file_get_contents($filename),true);
 			}
-   		if(!empty($scoretable[$name]))
-   		{
-   			if(((int)$scoretable[$name]['score']) < ((int)$msg['score']))
-   			{
-  				 $scoretable[$name]=$msg;
-   			}
-   			else $donotupdate = true;
-   			
-   		}
-   		else $scoretable[$name]=$msg;
-   		if(!$donotupdate)
-   		{
-   			usort($scoretable, 'myScoreSort');
-			//ksort($scoretable['score']);
-			foreach ($scoretable as $i )
+			if(!empty($scoretable[$name]))
 			{
-				$newscores[$i['name']] = $i;
+				if(((int)$scoretable[$name]['score']) < ((int)$msg['score']))
+				{
+					 $scoretable[$name]=$msg;
+				}
+				else $donotupdate = true;
+				
 			}
-   			file_put_contents($filename, json_encode($newscores));
-   		}
+			else $scoretable[$name]=$msg;
+			if(!$donotupdate)
+			{
+				usort($scoretable, 'myScoreSort');
+				//ksort($scoretable['score']);
+				foreach ($scoretable as $i )
+				{
+					$newscores[$i['name']] = $i;
+				}
+				file_put_contents($filename, json_encode($newscores));
+			}
 		}
 	}
 	
@@ -131,8 +133,15 @@
     case 'GET':
 		  if(!empty($_GET['track']) && !empty($_GET['mode']))
 		  {
-			$filename = sprintf("club_highscores/%s%s%s.json",$_GET['track'],$delimitter,$_GET['mode']);
-			echo file_get_contents($filename);
+        if(empty($_GET['client_version']) or ((int)$_GET['client_version'])!=$server_version)
+        {   
+          echo '{"Error":{"name":"Error","track":"testirata","mode":"race","score":"Please update plugin"}}';      
+        }
+        else
+        {
+          $filename = sprintf("club_highscores/%s%s%s.json",$_GET['track'],$delimitter,$_GET['mode']);
+          echo file_get_contents($filename);	            
+        }			
 		  }
 		  else echo file_get_contents("club_highscores/scorelog.txt");
 		  //send_response(200, "", "");
@@ -146,18 +155,22 @@
 	  //{"name":"player3","track":"testirata","mode":"drift","score":"300"}
 		  $test = json_decode(file_get_contents('php://input'),true);		  
 	  	log_POST($test);
-	  	
-		  if('time' == strtolower($test['mode']))
-			{
-				update_time_score($test);
-				send_response(200, "Score updated", "OK");
-			}
-			else if (array_key_exists("mode",$test))
-			{
-				update_drift_score($test);
-			  send_response(200, "Score updated", "OK");
-			}
-			else send_response(405, "Mode Not supported", "Error");
+		
+		if(!isset($test['client_version']) or ((int)$test['client_version'])!=$server_version)
+		{
+			echo '{"Error":{"score":"Please upgrade version"}}';
+		}
+		else if('time' == strtolower($test['mode']))
+		{
+			update_time_score($test);
+			send_response(200, "Score updated", "OK");
+		}
+		else if (array_key_exists("mode",$test))
+		{
+			update_drift_score($test);
+		  send_response(200, "Score updated", "OK");
+		}
+		else send_response(405, "Mode Not supported", "Error");
 		  break;
 	  
 	  default:

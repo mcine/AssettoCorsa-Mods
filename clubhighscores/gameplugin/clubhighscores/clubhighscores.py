@@ -22,6 +22,8 @@ from sim_info import info
 import threading
 
 server_url = "http://clubhighscores.000webhostapp.com/club_highscores.php";
+#server_url = "http://192.168.0.142/Website/club_highscores.php"
+client_version = 1
 server_connection_ok=0
 scorelabel=0
 currentscorelabel=0
@@ -43,6 +45,7 @@ invalidDriftCounter = 0
 invalidDriftInterval = 3
 lastLapCumulativeScore = 0
 wasInPit = 1;
+driftScoreAtStartLine = 0
 
 
 def acMain(ac_version):
@@ -142,8 +145,8 @@ def GetScoresFromServer(params):
   return scorestring 
 
 def UpdateScores():
-  global server_connection_ok
-  params = "?track="+ac.getTrackName(0)+"-"+ac.getTrackConfiguration(0)+"&mode=drift";
+  global server_connection_ok,client_version
+  params = "?track="+ac.getTrackName(0)+"-"+ac.getTrackConfiguration(0)+"&mode=drift&client_version="+str(client_version);
   scorejson = GetScoresFromServer(params);
   scores = ''
   for (key) in scorejson:
@@ -155,6 +158,7 @@ def UpdateScores():
   
 def SendScore(pdata):
   try:
+    pdata["client_version"] = str(client_version)
     req = urllib2.Request(server_url)
     req.add_header('Content-Type', 'application/json')
     urllib2.urlopen(req, json.dumps(pdata).encode('utf-8'))
@@ -181,10 +185,13 @@ def resetDriftScoring():
   lastdi = 0;
   waitForInvalid = 0;
   storeDriftScore = 0;
+  driftScoreAtStartLine = 0;
   
 def SendLapScore():
-  global lastLapCumulativeScore,cumulativescore
-  lapscore = cumulativescore - lastLapCumulativeScore;
+  global lastLapCumulativeScore,cumulativescore,driftScoreAtStartLine
+  currentDrift = round(ac.getCarState(0, acsys.CS.InstantDrift))
+  lapscore = cumulativescore - lastLapCumulativeScore; # + currentDrift - driftScoreAtStartLine
+  driftScoreAtStartLine = currentDrift
   lastLapCumulativeScore = cumulativescore;
   data = {"name":ac.getDriverName(0),"track":ac.getTrackName(0)+"-"+ac.getTrackConfiguration(0),"mode":"OneLapDrifting","car":ac.getCarName(0),
   "score":str(lapscore),"laptime":str(ac.getCarState(0,acsys.CS.LastLap))}
