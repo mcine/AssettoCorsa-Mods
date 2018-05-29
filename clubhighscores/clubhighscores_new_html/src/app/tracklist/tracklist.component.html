@@ -1,0 +1,35 @@
+<!--<ul *ngFor="let track of tracklist; index as trackIndex;" ><li>
+  <label>{{ track.name }} </label>
+  <ul *ngFor="let mode of track.modes; index as modeIndex;"> 
+      <li>{{ mode }}</li>      
+  </ul>
+</li></ul>
+-->
+  
+<div>
+
+    <input matInput (keyup)="applyFilter($event.target.value)" placeholder="Filter">
+
+  <mat-table [dataSource]='dataSource' matSort matSortActive="name" matSortDirection="asc">
+  <ng-container matColumnDef="name">
+    <mat-header-cell *matHeaderCellDef mat-sort-header>Name</mat-header-cell>
+    <mat-cell *matCellDef='let track'>{{track.name}}</mat-cell>
+  </ng-container>
+  <ng-container matColumnDef='drift'>
+    <mat-header-cell *matHeaderCellDef mat-sort-header>Drift Score</mat-header-cell>
+    <mat-cell *matCellDef='let track'>
+        <a href='print_scores.php?track={{track.name}}&mode=drift'>{{track.drift}}</a></mat-cell>
+  </ng-container>
+  <ng-container matColumnDef='onelap'>
+    <mat-header-cell *matHeaderCellDef mat-sort-header>One Lap Score</mat-header-cell>
+    <mat-cell *matCellDef='let track'>
+        <a href='print_scores.php?track={{track.name}}&mode=OneLapDrifting'>{{track.onelapdrifting}}</a></mat-cell>
+  </ng-container>
+  <ng-container matColumnDef='race'>
+    <mat-header-cell *matHeaderCellDef mat-sort-header>Race Score</mat-header-cell>
+    <mat-cell *matCellDef='let track'>
+        <a href='print_scores.php?track={{track.name}}&mode=race'>{{track.race}}</a></mat-cell>
+  </ng-container>
+  <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+  <mat-row *matRowDef="let row; columns:displayedColumns"></mat-row>
+</mat-table></div>

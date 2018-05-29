@@ -1,0 +1,102 @@
+<?php
+	header ("Content-Type:application/json");
+   $method = $_SERVER['REQUEST_METHOD'];
+   //echo $method;
+/*	if(!empty($_GET['name'])) // get parameter
+	{
+	   echo $_SERVER['REQUEST_URI'];
+	}
+	else
+	{
+		
+	}
+	*/
+	switch ($method)
+	{
+    case 'GET':
+	    echo file_get_contents("log.txt");
+		  send_response(200, "", "");
+		  break;
+	  
+	  case 'PUT':
+		  send_response(405, "", "");
+		  break;
+	  
+	  case 'POST': // curl -H "Content-Type: application/json" -X POST -d {\"test\":\"test\"} http://localhost:8080/test.php
+		  $test = json_decode(file_get_contents('php://input'),true);
+		  echo $test['name'];
+	  	log_POST($test);
+		  update_score($test);
+		  send_response(200, "Score updated", "OK");
+		  break;
+	  
+	  default:
+	  case 'DELETE':
+		  send_response(405, "", "");
+		  break;
+	}  
+	
+	function send_response($status, $status_message, $data)
+	{
+		header("HTTP/1.1 $status $status_message");
+		$response['status'] = $status;
+		$response['status_message'] = $status_message;
+		$response['data'] = $data;
+		
+		$json_responce=json_encode($response);
+		echo $json_responce;
+	}
+	
+  function log_POST($msg)
+	{
+		$log = sprintf("LOG: %s,%s,%s,%s",$msg['name'],$msg['track'],$msg['mode'],$msg['score']);
+		$myfile = file_put_contents('log.txt', $log.PHP_EOL , FILE_APPEND);
+	}
+	
+	function update_score($msg)
+	{
+    $donotupdate = false;
+		if(!empty($msg['track']) && !empty($msg['mode']) && !empty($msg['name'])  && !empty($msg['score']))
+		{
+			// highscore entry
+			$name = $msg['name'];
+			$removechars = array(' ','.','.');
+			$update_entry['score'] = $msg['score'];// str_replace($removechars, "", $msg['score']);
+      $update_entry['name'] = $name;
+			echo $update_entry['score'];
+			
+			$entry[$name] = $entry;
+			$filename = sprintf("club_highscores/%s_%s.json",$msg['track'],$msg['mode']);
+			if (!file_exists('club_highscores')) 
+			{
+   			 mkdir('club_highscores', 0777, true);
+   		}
+   		else
+   		{
+   			if(file_exists($filename))
+   			{
+   				$scoretable = json_decode(file_get_contents($filename),true);
+   			}
+   		}
+   		if(!empty($scoretable[$name]))
+   		{
+   			echo sprintf("\n scores %s - %s \n",($scoretable[$name]['score']),((int)$update_entry['score']));
+   			if(((int)$scoretable[$name]['score']) < ((int)$update_entry['score']))
+   			{
+   				 $scoretable[$name]=$update_entry;
+   			}
+   			else $donotupdate = true;
+   			
+   		}
+   		else $scoretable[$name]=$update_entry;
+   		if(!$donotupdate)
+   		{/*
+   			usort($scoretable, function($a, $b) { //Sort the array using a user defined function
+    			return ((int)$a['score']) > ((int)$b['score']) ? -1 : 1; //Compare the scores
+					});*/
+					ksort($scoretable['score']);   
+   			file_put_contents($filename, json_encode($scoretable));
+   		}
+		}
+	}
+?>

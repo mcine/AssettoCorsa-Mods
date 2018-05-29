@@ -190,7 +190,7 @@ def resetDriftScoring():
 def SendLapScore():
   global lastLapCumulativeScore,cumulativescore,driftScoreAtStartLine
   currentDrift = round(ac.getCarState(0, acsys.CS.InstantDrift))
-  lapscore = cumulativescore - lastLapCumulativeScore; # + currentDrift - driftScoreAtStartLine
+  lapscore = cumulativescore - lastLapCumulativeScore + currentDrift - driftScoreAtStartLine; # + currentDrift - driftScoreAtStartLine
   driftScoreAtStartLine = currentDrift
   lastLapCumulativeScore = cumulativescore;
   data = {"name":ac.getDriverName(0),"track":ac.getTrackName(0)+"-"+ac.getTrackConfiguration(0),"mode":"OneLapDrifting","car":ac.getCarName(0),

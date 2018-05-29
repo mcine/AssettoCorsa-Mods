@@ -107,6 +107,103 @@
 		}
 	}
 
+	function get_best_score($track, $mode)
+	{
+    	global $delimitter;
+    	$donotupdate = false;
+		
+		$filename = sprintf("club_highscores/%s%s%s.json",$track,$delimitter,$mode);
+
+		if(file_exists($filename))
+		{
+			$scoretable = json_decode(file_get_contents($filename),true);
+			return array_values($scoretable)[0]['score'];
+			
+		}
+		return "";
+	}
+
+	function starts_with($src, $token)
+	{
+		 $length = strlen($token);
+		 return (substr($src, 0, $length) === $token);
+	}
+	
+	function ends_with($src, $token)
+	{
+		$length = strlen($token);
+	
+		return $length === 0 || 
+		(substr($src, -$length) === $token);
+	}
+
+	function get_tracks_and_modes() 
+	{
+
+		$dir    = 'club_highscores';
+		$files1 = scandir($dir);
+		$delimiter = '(chs)';
+		//print_r($files1);
+				
+		$lastTrack = "";
+		$list = array();
+		$track = array();
+		$modes = array();
+
+		foreach ($files1 as $f )
+		{							
+			if (strpos($f,$delimiter ) !== false) 
+			{
+				$name = explode(".json",$f);
+				$parts = explode($delimiter,$name[0]);
+				//print_r ($parts);				
+				if ($lastTrack == $parts[0])
+				{
+					$x = strtolower($parts[1]);
+					$track[$x]=get_best_score($parts[0], $parts[1]);
+					//array_push($modes,$parts[1]);
+				}
+				else 
+				{
+					if ($lastTrack != "")
+					{
+						//$track['modes'] = $modes;
+						array_push($list,$track);						
+					}
+					$track = array('name'=>"",'drift'=>"",'onelapdrifting'=>"",'race'=>"");
+					$modes = array();
+					$track['name'] = strtolower($parts[0]);
+					$x = strtolower($parts[1]);
+					$track[$x]=get_best_score($parts[0], $parts[1]);
+					//array_push($modes,$parts[1]);
+				}				
+				$lastTrack = $parts[0];
+			}			
+		}
+
+		return json_encode($list);
+/*
+		$dir          = "club_highscores/"; //path
+		$list = array();
+
+		if(is_dir($dir)){
+			if($dh = opendir($dir)){
+				while(($file = readdir($dh)) != false){
+
+					if(ends_with($file,".json")){						
+						$list3 = array(
+						'file' => $file, 
+						'size' => filesize($file));
+						array_push($list, $list3);
+					}
+				}
+			}
+
+			$return_array = array('files'=> $list);
+
+			echo json_encode($return_array);
+		}*/
+	}
 
 	header ("Content-Type:application/json");
   $method = $_SERVER['REQUEST_METHOD'];
@@ -131,21 +228,22 @@
 	switch ($method)
 	{
     case 'GET':
-		  if(!empty($_GET['track']) && !empty($_GET['mode']))
-		  {
-        if(empty($_GET['client_version']) or ((int)$_GET['client_version'])!=$server_version)
-        {   
-          echo '{"Error":{"name":"Error","track":"testirata","mode":"race","score":"Please update plugin"}}';      
-        }
-        else
-        {
-          $filename = sprintf("club_highscores/%s%s%s.json",$_GET['track'],$delimitter,$_GET['mode']);
-          echo file_get_contents($filename);	            
-        }			
-		  }
-		  else echo file_get_contents("club_highscores/scorelog.txt");
-		  //send_response(200, "", "");
-		  break;
+		if(!empty($_GET['track']) && !empty($_GET['mode']))
+		{
+			if(empty($_GET['client_version']) or ((int)$_GET['client_version'])!=$server_version)
+			{   
+			echo '{"Error":{"name":"Error","track":"testirata","mode":"race","score":"Please update plugin"}}';      
+			}
+			else
+			{
+			$filename = sprintf("club_highscores/%s%s%s.json",$_GET['track'],$delimitter,$_GET['mode']);
+			echo file_get_contents($filename);	            
+			}			
+		}
+		else if(!empty($_GET['list']))	echo get_tracks_and_modes();
+		else echo file_get_contents("club_highscores/scorelog.txt");
+		//send_response(200, "", "");
+		break;
 	  
 	  case 'PUT':
 		  send_response(405, "", "");
@@ -153,7 +251,7 @@
 	  
 	  case 'POST': // curl -H "Content-Type: application/json" -X POST -d {\"test\":\"test\"} http://localhost:8080/test.php
 	  //{"name":"player3","track":"testirata","mode":"drift","score":"300"}
-		  $test = json_decode(file_get_contents('php://input'),true);		  
+		$test = json_decode(file_get_contents('php://input'),true);		  
 	  	log_POST($test);
 		
 		if(!isset($test['client_version']) or ((int)$test['client_version'])!=$server_version)

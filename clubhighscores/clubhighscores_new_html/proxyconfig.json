@@ -1,0 +1,10 @@
+{
+  "/fetch": {
+    "target": "http://localhost:8081/club_highscores.php",
+    "secure": true,
+    "pathRewrite": {
+    "^/fetch": ""
+  },
+    "changeOrigin": true
+  }
+}
